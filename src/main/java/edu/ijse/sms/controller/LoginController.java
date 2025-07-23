@@ -3,6 +3,7 @@ package edu.ijse.sms.controller;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import edu.ijse.sms.db.DBConnection;
@@ -12,6 +13,7 @@ import java.io.IOException;
 import java.sql.*;
 
 public class LoginController {
+    public AnchorPane RadioButton;
     @FXML
     private TextField usernameField;
 
