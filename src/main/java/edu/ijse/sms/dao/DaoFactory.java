@@ -1,6 +1,10 @@
 package edu.ijse.sms.dao;
 
+import edu.ijse.sms.dao.custom.CourseDaoImpl;
 import edu.ijse.sms.dao.custom.StudentDaoImpl;
+import edu.ijse.sms.dao.custom.SubjectDaoImpl;
+
+
 
 public class DaoFactory {
     private static DaoFactory instance;
@@ -15,7 +19,7 @@ public class DaoFactory {
     }
 
     public enum DAOType {
-        STUDENT, COURSE, LECTURER // Add other DAO types as needed
+        STUDENT,SUBJECT,COURSE, LECTURER // Add other DAO types as needed
     }
 
     public <T> T getDao(DAOType daoType) {
@@ -23,8 +27,9 @@ public class DaoFactory {
             case STUDENT:
                 return (T) new StudentDaoImpl();// Assume StudentDaoImpl exists
             case COURSE:
-                // Add CourseDaoImpl when implemented
-                return null;
+                return (T) new CourseDaoImpl();
+            case SUBJECT:
+                return (T) new SubjectDaoImpl();
             case LECTURER:
                 // Add LecturerDaoImpl when implemented
                 return null;
