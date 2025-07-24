@@ -1,6 +1,7 @@
 package edu.ijse.sms.dao;
 
 import edu.ijse.sms.dao.custom.CourseDaoImpl;
+import edu.ijse.sms.dao.custom.LecturerDaoImpl;
 import edu.ijse.sms.dao.custom.StudentDaoImpl;
 import edu.ijse.sms.dao.custom.SubjectDaoImpl;
 
@@ -31,8 +32,7 @@ public class DaoFactory {
             case SUBJECT:
                 return (T) new SubjectDaoImpl();
             case LECTURER:
-                // Add LecturerDaoImpl when implemented
-                return null;
+                return (T) new LecturerDaoImpl();
             default:
                 return null;
         }

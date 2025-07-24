@@ -20,7 +20,7 @@
       <Label layoutX="290.0" layoutY="84.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #eac6bd;" text="Subject Name" />
       <TextField fx:id="txtSubjectId" layoutX="141.0" layoutY="84.0" prefHeight="26.0" prefWidth="133.0" />
       <TextField fx:id="txtSubjectName" layoutX="410.0" layoutY="83.0" prefHeight="26.0" prefWidth="146.0" />
-      <TableView fx:id="tblSubjects" layoutX="28.0" layoutY="180.0" prefHeight="140.0" prefWidth="542.0">
+      <TableView fx:id="tblSubjects" layoutX="29.0" layoutY="167.0" prefHeight="140.0" prefWidth="542.0">
         <columns>
           <TableColumn fx:id="colSubjectId" prefWidth="75.0" text="Subject_ID" />
           <TableColumn fx:id="colSubjectName" prefWidth="75.0" text="Subject_Name" />
@@ -29,18 +29,18 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button layoutX="334.0" layoutY="126.0" mnemonicParsing="false" onAction="#saveSubject" prefHeight="26.0" prefWidth="70.0" text="Save" />
-      <Button layoutX="438.0" layoutY="126.0" mnemonicParsing="false" onAction="#deleteSubject" prefHeight="26.0" prefWidth="79.0" text="Delete" />
-      <Label layoutX="29.0" layoutY="361.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #eac6bd;" text="Course Id" />
-      <Label layoutX="21.0" layoutY="458.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #eac6bd;" text="Subject Id" />
-      <Label layoutX="308.0" layoutY="361.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #eac6bd;" text="Course name" />
-      <Button layoutX="208.0" layoutY="402.0" mnemonicParsing="false" onAction="#saveCourse" prefHeight="26.0" prefWidth="116.0" text="Save" />
-      <Button layoutX="334.0" layoutY="402.0" mnemonicParsing="false" onAction="#updateCourse" prefHeight="26.0" prefWidth="116.0" text="Update" />
-      <Button layoutX="478.0" layoutY="402.0" mnemonicParsing="false" onAction="#deleteCourse" prefHeight="26.0" prefWidth="116.0" text="Delete" />
-      <TextField fx:id="txtCourseName" layoutX="431.0" layoutY="361.0" prefHeight="26.0" prefWidth="133.0" />
-      <TextField fx:id="txtCourseId" layoutX="157.0" layoutY="361.0" prefHeight="26.0" prefWidth="133.0" />
-      <ComboBox fx:id="cmbSubjects" layoutX="141.0" layoutY="457.0" prefHeight="26.0" prefWidth="184.0" />
-      <TableView fx:id="tblCourses" layoutX="19.0" layoutY="502.0" prefHeight="156.0" prefWidth="551.0">
+      <Button layoutX="194.0" layoutY="126.0" mnemonicParsing="false" onAction="#saveSubject" prefHeight="26.0" prefWidth="116.0" text="Save" />
+      <Button layoutX="331.0" layoutY="126.0" mnemonicParsing="false" onAction="#deleteSubject" prefHeight="26.0" prefWidth="106.0" text="Delete" />
+      <Label layoutX="32.0" layoutY="324.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #eac6bd;" text="Course Id" />
+      <Label layoutX="109.0" layoutY="445.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #eac6bd;" text="Subject Id" />
+      <Label layoutX="312.0" layoutY="324.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #eac6bd;" text="Course name" />
+      <Button layoutX="181.0" layoutY="365.0" mnemonicParsing="false" onAction="#saveCourse" prefHeight="26.0" prefWidth="116.0" text="Save" />
+      <Button layoutX="307.0" layoutY="365.0" mnemonicParsing="false" onAction="#updateCourse" prefHeight="26.0" prefWidth="116.0" text="Update" />
+      <Button layoutX="451.0" layoutY="365.0" mnemonicParsing="false" onAction="#deleteCourse" prefHeight="26.0" prefWidth="116.0" text="Delete" />
+      <TextField fx:id="txtCourseName" layoutX="435.0" layoutY="324.0" prefHeight="26.0" prefWidth="133.0" />
+      <TextField fx:id="txtCourseId" layoutX="147.0" layoutY="324.0" prefHeight="26.0" prefWidth="133.0" />
+      <ComboBox fx:id="cmbSubjects" layoutX="226.0" layoutY="445.0" prefHeight="26.0" prefWidth="184.0" />
+      <TableView fx:id="tblCourses" layoutX="31.0" layoutY="492.0" prefHeight="156.0" prefWidth="551.0">
         <columns>
           <TableColumn fx:id="colCourseId" prefWidth="75.0" text="Course" />
           <TableColumn fx:id="colCourseName" prefWidth="75.0" text="Course Name" />
@@ -50,6 +50,7 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button layoutX="414.0" layoutY="457.0" mnemonicParsing="false" onAction="#addSubjectToCourse" prefHeight="26.0" prefWidth="166.0" text="add" />
+      <Button layoutX="419.0" layoutY="445.0" mnemonicParsing="false" onAction="#addSubjectToCourse" prefHeight="26.0" prefWidth="166.0" text="add" />
+      <Label layoutX="39.0" layoutY="419.0" prefHeight="18.0" prefWidth="374.0" style="-fx-background-color: #dff1f3; -fx-background-radius: 20px;" text="Enter Course ID and Select Subjects to add" />
    </children>
 </AnchorPane>
