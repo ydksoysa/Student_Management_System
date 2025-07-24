@@ -27,7 +27,7 @@
             </Lighting>
          </effect>
       </Label>
-      <Button fx:id="btnManageCourse" layoutX="68.0" layoutY="94.0" mnemonicParsing="false" onAction="#handleManageCourse" prefHeight="42.0" prefWidth="221.0" style="-fx-background-color: #D5F5D1;" text="Manage Course">
+      <Button layoutX="68.0" layoutY="94.0" mnemonicParsing="false" onAction="#handleManageCourse" prefHeight="42.0" prefWidth="221.0" style="-fx-background-color: #D5F5D1;" text="Manage Course">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

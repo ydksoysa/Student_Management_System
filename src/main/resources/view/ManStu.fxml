@@ -19,51 +19,51 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="216.0" layoutY="54.0" />
+      <TextField fx:id="txtRegisteredId" layoutX="216.0" layoutY="54.0" />
       <Label layoutX="37.0" layoutY="180.0" prefHeight="35.0" prefWidth="178.0" style="-fx-background-color: #E0D5CB; -fx-background-radius: 30px; -fx-border-color: #9A7C61;" text="Contact Num.">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="216.0" layoutY="185.0" />
+      <TextField fx:id="txtContactNum" layoutX="216.0" layoutY="185.0" />
       <Label layoutX="37.0" layoutY="95.0" prefHeight="35.0" prefWidth="178.0" style="-fx-background-color: #E0D5CB; -fx-background-radius: 30px; -fx-border-color: #9A7C61;" text="Student Name">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="216.0" layoutY="100.0" />
+      <TextField fx:id="txtName" layoutX="216.0" layoutY="100.0" />
       <Label layoutX="37.0" layoutY="138.0" prefHeight="35.0" prefWidth="178.0" style="-fx-background-color: #E0D5CB; -fx-background-radius: 30px; -fx-border-color: #9A7C61;" text="Course">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="216.0" layoutY="143.0" />
-      <Button layoutX="37.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="121.0" style="-fx-border-color: #9A7C61; -fx-border-radius: 30px;" text="Add">
+      <TextField fx:id="txtCourse" layoutX="216.0" layoutY="143.0" />
+      <Button layoutX="37.0" layoutY="253.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="26.0" prefWidth="121.0" style="-fx-border-color: #9A7C61; -fx-border-radius: 30px;" text="Add">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="178.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="121.0" style="-fx-border-color: #9A7C61; -fx-border-radius: 30px;" text="Update ">
+      <Button layoutX="178.0" layoutY="253.0" mnemonicParsing="false" onAction="#updateStudent" prefHeight="26.0" prefWidth="121.0" style="-fx-border-color: #9A7C61; -fx-border-radius: 30px;" text="Update ">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="326.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="121.0" style="-fx-border-color: #9A7C61; -fx-border-radius: 30px;" text="Delete">
+      <Button layoutX="326.0" layoutY="253.0" mnemonicParsing="false" onAction="#deleteStudent" prefHeight="26.0" prefWidth="121.0" style="-fx-border-color: #9A7C61; -fx-border-radius: 30px;" text="Delete">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="464.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="121.0" style="-fx-border-color: #9A7C61; -fx-border-radius: 30px;" text="View List">
+      <Button layoutX="464.0" layoutY="253.0" mnemonicParsing="false" onAction="#viewList" prefHeight="26.0" prefWidth="121.0" style="-fx-border-color: #9A7C61; -fx-border-radius: 30px;" text="View List">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <TableView layoutX="48.0" layoutY="331.0" prefHeight="217.0" prefWidth="486.0">
+      <TableView fx:id="tblStudents" layoutX="48.0" layoutY="331.0" prefHeight="217.0" prefWidth="486.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Id" />
-          <TableColumn prefWidth="75.0" text="Name" />
-            <TableColumn prefWidth="75.0" text="Course Id" />
-            <TableColumn prefWidth="75.0" text="Contact num." />
+          <TableColumn fx:id="colRegId" prefWidth="75.0" text="registerd Id" />
+          <TableColumn fx:id="colName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="colCourse" prefWidth="75.0" text="Course Id" />
+            <TableColumn fx:id="colContact" prefWidth="75.0" text="Contact num." />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
